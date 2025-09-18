@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background_2"
+    android:padding="24dp">
+
+    <!-- Big X and O background icons (optional for design) -->
+    <!-- Add as ImageViews or drawables if needed -->
+    <!-- Game Title -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Tic Tac\nDuel"
+        android:textColor="@android:color/white"
+        android:textSize="65sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:lineSpacingExtra="8dp" />
+
+    <!-- Slogan -->
+    <TextView
+        android:id="@+id/app_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap to Victory"
+        android:textSize="20sp"
+        android:textColor="#FDF0D5"
+        android:layout_below="@id/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Start Button -->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="START"
+        android:textAllCaps="true"
+        android:textColor="#FDF0D5"
+        android:textSize="18sp"
+        android:backgroundTint="#3C948B"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:layout_below="@id/app_slogan"
+        android:background="@drawable/rounded_button"/>
+
+    <!-- Exit Button -->
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="EXIT"
+        android:textAllCaps="true"
+        android:textColor="#FDF0D5"
+        android:textSize="18sp"
+        android:backgroundTint="#3C948B"
+        android:layout_below="@id/btnStart"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"/>
+</RelativeLayout>
